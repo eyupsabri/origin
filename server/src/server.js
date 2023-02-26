@@ -1,6 +1,6 @@
 const http = require('http');
 
-
+require('dotenv').config();
 //const cluster = require('cluster');
 
 const app = require('./app');

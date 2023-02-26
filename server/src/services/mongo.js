@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URL = 'mongodb+srv://nasa-api:UUDYDXvrJkjWZ4Dd@nasa.yapzygm.mongodb.net/?retryWrites=true&w=majority'
+const MONGO_URL = process.env.MONGO_URL;
 
 
 mongoose.connection.once('open', () => { //on yerine once yazınca bir kere triggered oluyor
